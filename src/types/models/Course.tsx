@@ -76,3 +76,13 @@ export interface ICoursePaging {
   result: ICourseElearn[]
 }
 
+
+export interface IAllCourse {
+  data: ICoursePaging,
+}
+
+export interface IPostLike {
+  course_id: string,
+  user_id: string
+}
+

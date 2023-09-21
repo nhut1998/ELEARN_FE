@@ -6,6 +6,7 @@ import HouseIcon from '@mui/icons-material/House';
 import AddCourse from "views/pages/AddCourse/AddCourse";
 import AddIcon from '@mui/icons-material/Add';
 import DetailCart from "views/pages/Cart/DetailCart";
+import AllCourse from "views/pages/AllCourse/AllCourse";
 
 const appRoutes: RouteType[] = [
   {
@@ -17,6 +18,11 @@ const appRoutes: RouteType[] = [
     path: "/cart-detail",
     element: <DetailCart />,
     state: "cart",
+  },
+  {
+    path: "/all-course",
+    element: <AllCourse />,
+    state: "allcourse",
   },
 
   {

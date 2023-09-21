@@ -7,6 +7,7 @@ import CatalogReducer from "features/course/store/slice";
 import CoursesReducer from "features/courses/store/slice";
 import CoursePagingReducer from "features/coursePaging/store/slice";
 import CartReducer from "features/cart/store/slice";
+import CourseAllReducer from "features/allCourse/store/slice";
 
 const reducer: ReducersMapObject<RootState, AnyAction> = {
   app: AppReducer,
@@ -16,6 +17,7 @@ const reducer: ReducersMapObject<RootState, AnyAction> = {
   course: CoursesReducer,
   coursePaging: CoursePagingReducer,
   cart: CartReducer,
+  courseAll:CourseAllReducer,
 }
 
 export default reducer

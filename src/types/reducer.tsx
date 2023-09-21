@@ -3,7 +3,7 @@ import { IAppState } from "./app";
 import { IListCode } from "./api";
 import { IAccountState } from "./models/Account";
 import { ISidebar } from "./models/Sidebar";
-import { IResponseCatalog, IResponseCourseElearn, IResponseCoursePaging } from "./models/Course";
+import { IAllCourse, IResponseCatalog, IResponseCourseElearn, IResponseCoursePaging } from "./models/Course";
 import { ICart } from "./models/Cart";
 
 export interface RootState {
@@ -14,6 +14,7 @@ export interface RootState {
   course: IResponseCourseElearn,
   coursePaging: IResponseCoursePaging,
   cart: ICart,
+  courseAll:IAllCourse,
 }
 
 export type PAListCode<T> = PayloadAction<IListCode<T>>;

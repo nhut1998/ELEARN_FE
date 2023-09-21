@@ -1,3 +1,4 @@
+import postLikeSaga from "features/allCourse/store/saga"
 import appSaga from "features/app/store/saga"
 import authSaga from "features/auth/store/saga"
 import catalogSaga from "features/course/store/saga"
@@ -12,6 +13,7 @@ export default function* rootSaga(){
     authSaga(),
     appSaga(),
     courseSaga(),
-    coursePagingSaga()
+    coursePagingSaga(),
+    postLikeSaga()
   ])
 }

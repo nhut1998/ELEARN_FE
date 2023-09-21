@@ -26,5 +26,6 @@ export interface IListCode<T>  extends IListData<T>{
 }
 
 export type IResponse<T> = Promise<IApiResponse<T>>;
+
 export type IHeaderRequest = HeadersInit | Record<string, any>;
 export type IDataRequest = Record<string, any> | FormData
